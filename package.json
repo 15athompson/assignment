@@ -1,0 +1,10 @@
+{
+  "name": "assignment",
+  "packageManager": "yarn@3.3.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "requirejs": "^2.3.6",
+    "tvmaze-api": "^0.3.0",
+    "uniq": "^1.0.1"
+  }
+}

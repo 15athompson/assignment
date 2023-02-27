@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+  
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+     maximum-scale=1.0, user-scalable=no">
+     <meta name="theme-color" content="#000000" />
+     <meta
+      name="description"
+      content="TV search website using TVmaze API"
+    />
+    <meta charset="utf-8" />
+    <title>TV show search tool</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/mediaqueries.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/e0ab333f43.js" crossorigin="anonymous"></script>
+    
+    
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TJB8PX2H6B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TJB8PX2H6B');
+</script>
+
+<style>
+    .divScroll {
+        overflow:scroll;
+        height:100px;
+        width:200px;
+    }
+
+    @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+  
+<body id=”home-page”>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+                        <a class="navbar-brand" href="index.html">TV show search tool</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            </button>
+              <div class="collapse navbar-collapse" class="divScroll" id="navbarNav">               
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house-user">&#160&#160</i>Home</a> <!--  "&#160" will add spaces -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shows.html"><i class="fa-solid fa-camera">&#160&#160</i>Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html"><i class="fa-solid fa-mask">&#160&#160</i>People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="seasons.html"><i class="fa-solid fa-square">&#160&#160</i>Seasons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="episodes.html"><i class="fa-solid fa-x">&#160&#160</i>Episodes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html"><i class="fa-solid fa-search">&#160&#160</i>Search</a>
+                    </li>
+                        
+                        
+                       <!-- <input type="text" placeholder=""> -->
+                      
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="shadow p-5 mb-4 bg-light jumbotron">
+            <div class="container">
+                 <h1 class="display-5 fw-bold">Welcome</h1>
+                <!-- <p class="col-md-8 fs-4">View the Top TV shows.</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="opacity-75 shadow p-3 mb-2 bg-secondary text-white">
+        <h2 class="col-md-8 fs-4">View the latest hits from these selected genres...</h2>
+        <span class="d-block p-2 text-bg-dark"></span>
+    </div>
+    
+    
+
+
+        <div class="container">
+            <div class="row text-center" >
+                <div class="col-lg-4">
+                    <img class="rectangle mb-3" src="images\MV5BNmNkYmZjZDMtNjVmZC00OWVkLWI1MzEtYjI0ZDc2MjExYWY2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+                    width="140" height="140"  style="max-width: 100%;" alt="">
+                    <h3>Action</h3>
+                    <p>The Terminal List</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="rectangle mb-3" src="images\MV5BZjBiOGIyY2YtOTA3OC00YzY1LThkYjktMGRkYTNhNTExY2I2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg"
+                    width="140" height="140"  style="max-width: 100%;" alt="">
+                    <h3>Drama</h3>
+                    <p>House of the Dragon</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="rectangle mb-3" src="images\MV5BOTEyNDJhMDAtY2U5ZS00OTMzLTkwODktMjU3MjFkZWVlMGYyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg"
+                    width="140" height="140"  style="max-width: 100%;" alt="">
+                    <h3>Comedy</h3>
+                    <p>The Boys</p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="rectangle mb-3" src="images\MV5BNTc5OGU1YjItZmVhZi00NmE3LTk0ZWEtZDE1OGJjMTMzNDY2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg"
+                    width="140" height="140"  style="max-width: 100%;" alt="">
+                    <h3>Horror</h3>
+                    <p>The Midnight Club </p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="rectangle mb-3" src="images\MV5BMTNmZDE2NDEtNTg3MS00OTE1LThlZGUtOGZkZTg0NTUyNGVmXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg"
+                    width="140" height="140"  style="max-width: 100%;" alt="">
+                    <h3>Anime</h3>
+                    <p>One Punch Man</p>
+                </div>
+            </div>
+        </div>
+
+       
+       <div>
+       &#160&#160
+       </div>
+        <form class="form-horizontal" role="form">
+            <div class="container">
+                <div class="form-group" >
+                    <div class="opacity-75 shadow p-3 mb-2 text-bg-secondary text-white">
+            
+                    <h1 class="form-label">email: access your saved searches</h1>
+                    
+                <div class="row gy-2">
+                   
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control" name="personal email" placeholder="Personal Email" />
+            
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" name="fullname" placeholder="Full Name" />
+              
+                <label class="form-label">Age</label>
+                <input type="number" class="form-control" name="age" placeholder="Click Spinner"/>
+              
+                <label class="form-label">Language</label>
+               
+            
+                <select name="lang" class="form-select" aria-label="Default select example" >
+                    <option selected>Open select menu</option>
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="nl">Dutch</option>
+                    <option value="el">Greek</option>
+                    <option value="it">Italian</option>
+                </select>
+            
+                <label class="form-label">Bio</label>
+                
+                <textarea class="form-control" name="bio" rows="3" ></textarea> 
+            
+                
+                </div>
+                &#160&#160
+                </div>
+            
+                    
+                    <button   mb-3 type="button"  class="btn btn-primary">Submit</button>
+               
+                
+            
+                
+            </div>
+            </form>
+       </div>
+        
+
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+</body>
+
+</html>

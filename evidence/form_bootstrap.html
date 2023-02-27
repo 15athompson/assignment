@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1.0, user-scalable=no">
+   <meta charset="utf-8" />
+       <title></title>
+   <link 
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+   rel="stylesheet">
+
+
+<style>
+
+label {
+  text-align: left;
+  height: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  margin-top: 20px;
+  margin-right: 40px;
+  
+}
+
+input {
+  text-align: left;
+  height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+
+button {
+  text-align: left;
+  height: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 40px;
+  
+  margin-top: 20px;
+  margin-right: 20px;
+  
+
+  border-spacing: 80px;
+  width: 10%;
+  
+}
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+     
+<form class="form-horizontal" role="form">
+<div class="container">
+    <div class="form-group" >
+    <div class="row gy-2">
+        
+
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" name="fullname" placeholder="Full Name" />
+  
+    <label class="form-label">Age</label>
+    <input type="number" class="form-control" name="age" />
+  
+    <label class="form-label">Language</label>
+   
+
+    <select name="lang" class="form-select" aria-label="Default select example" >
+        <option selected>Open select menu</option>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="nl">Dutch</option>
+        <option value="el">Greek</option>
+        <option value="it">Italian</option>
+    </select>
+
+    <label class="form-label">Bio</label>
+    
+    <textarea class="form-control" name="bio" rows="3" ></textarea> 
+
+    
+    </div>
+    </div>
+
+        
+        <button   mb-3 type="button"  class="btn btn-primary">Submit</button>
+   
+    
+
+    
+</div>
+</form>
+
+</body>
+
+
+</html>
